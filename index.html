@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.php">
     <title>Portifolio</title>
 </head>
 
@@ -92,11 +93,10 @@
             <img id="link" src="public/images/linked-in-circled.png" alt=" logo linkedin">
         </a>
 
-        <form id="commentForm">
+        <form id="comentarioForm">
             <div id="Contato">
                 <h3>contacte-me</h3>
-
-                <label id="emai" for="email">E-mail:</label>
+                <label id="e-mail" for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
 
                 <br>
@@ -111,15 +111,12 @@
         </form>
 
         <script>
-            document.getElementById('commentForm').addEventListener('submit', function (event) {
-                event.preventDefault(); // Evita o envio padrão do formulário
+            document.getElementById('comentarioForm').addEventListener('submit', function (event) {
+                event.preventDefault(); 
 
                 var email = document.getElementById('email').value;
                 var comentario = document.getElementById('comentario').value;
 
-                // Aqui você pode fazer o que quiser com os dados, como enviá-los para o servidor.
-
-                // Exemplo de exibição dos dados:
                 console.log('E-mail: ' + email);
                 console.log('Comentário: ' + comentario);
             });

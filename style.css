@@ -6,11 +6,17 @@ body{
 header{
     width: 100%;
 }
+nav{
+    padding: 1rem;
+    width: 100%;
+}
+
 ul{
     list-style: none;
+    padding: 1vw;
     margin-top: -4rem;
     display: flex;
-    margin-left: 60%;
+    margin-left: 60vw;
     gap: 5%;
 }
 
@@ -34,13 +40,13 @@ ul{
 
 #Diego:hover{
     box-shadow: rgb(255, 0, 0) 0px 20px 30px ;
-    transition: all ease 0.5s;
+    transition: all ease 1s;
 }
 
 .menu{
     color: #FFF;
     font-family: Poppins;
-    font-size: 2rem;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -59,8 +65,13 @@ ul{
     width: 46%;
     height: 14%;
     margin-top: 10rem;
-    box-shadow: rgba(240, 46, 46, 0.4) -5px 5px, rgba(240, 46, 46, 0.3) -10px 10px, rgba(240, 46, 46, 0.2) -15px 15px, rgba(240, 46, 46, 0.1) -20px 20px, rgba(240, 46, 46, 0.05)-25px 25px;
 }
+
+#titulo:hover{
+    box-shadow: rgba(240, 46, 46, 0.4) -5px 5px, rgba(240, 46, 46, 0.3) -10px 10px, rgba(240, 46, 46, 0.2) -15px 15px, rgba(240, 46, 46, 0.1) -20px 20px, rgba(240, 46, 46, 0.05)-25px 25px;
+    transition: all ease 1s;
+}
+
 
 
 
@@ -215,7 +226,7 @@ main{
     border: 4px solid #000;
 
 
-}#emai{
+}#e-mail{
     margin-left:3rem ;
     color: #FFF;
     font-family: Poppins;
@@ -230,7 +241,7 @@ main{
     margin-top: 5rem;
     color: #FFF;
     font-family: Poppins;
-    font-size: 2.5;
+    font-size: 2.5vw;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -238,30 +249,30 @@ main{
 
 #email{
     margin-top: 1rem;
-    width: 60%;
-    height: 30%;
+    width: 20vw;
+    height: 3vh;
     flex-shrink: 0;
     border-radius: 0.625rem;
     background: #FFF;
 }
 
 
-
 #comentario{
     margin-left: 3rem;
-     width: 36%;
-    height: 50%;
+     width: 25vw;
+    height: 20vh;
     flex-shrink: 0;
     border-radius: 0.625rem;
     background: #FFF;
 }
 
 #enviar{
+    cursor: pointer;
     margin-top: 6%;
     margin-left: 60%;
     color: #FFF;
     font-family: Poppins;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -272,7 +283,6 @@ main{
     border-radius: 0.625rem;
     background: #000;
 }
-
 
 
 footer{
