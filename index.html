@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form.php">
+    <script src="script.js"></script>
     <title>Portifolio</title>
 </head>
 
@@ -22,6 +23,9 @@
                 <li><a class="menu" href="#Sobre">Sobre</a></li>
                 <li><a class="menu" href="#Formação">Formação</a></li>
                 <li><a class="menu" href="#Contato">Contato</a></li>
+                
+            <button id="increaseBtn">+</button>
+            <button id="decreaseBtn">-</button>
             </ul>
         </nav>
 
@@ -29,9 +33,9 @@
     </header>
 
     <div id="titulo">
-        <h1 id="eu">Diego Gabriel Ferrari</h1>
-        <h2 id="sou">Desenvolvedor Front-end</h2>
-        <h3 id="onde">Estudante sistemas para internet 3°semestre </h3>
+        <h1 id="eu" >Diego Gabriel Ferrari</h1>
+        <h2 id="sou" >Desenvolvedor Front-end</h2>
+        <h3 id="onde" >Estudante sistemas para internet 3°semestre </h3>
     </div>
     <img id="Diego" src="img/Diego.jpg" alt="foto do Diego">
 
@@ -41,18 +45,18 @@
     <main>
         <h2 id="Sobre">Sobre</h2>
         <div id="Sobremim">
-            <p>
+            <p class="text">
                 Olá! Eu sou Diego Gabriel Ferrari, estudante do Sistemas para Internet na Fatec de Taquaritinga. Minha
                 jornada acadêmica é marcada por projetos práticos que solidificam meu aprendizado teórico. Celebro
                 conquistas na conclusão bem-sucedida desses projetos, aprimorando minhas habilidades em desenvolvimento
                 de software.
             </p>
-            <p>
+            <p class="text">
                 Foco em linguagens de programação e ferramentas essenciais à minha área. Meu objetivo é aprofundar-me no
                 campo, explorar novas tecnologias e contribuir com soluções inovadoras. Sou movido pelo aprendizado
                 contínuo e motivado a enfrentar desafios para impulsionar meu crescimento profissional.
             </p>
-            <p>
+            <p class="text">
                 Minhas características incluem comprometimento e paixão pelo que faço. Estou entusiasmado com as
                 oportunidades na área de Sistemas para Internet, determinado a evoluir constantemente e ansioso pelo
                 futuro promissor repleto de experiências e desafios.
@@ -67,17 +71,25 @@
           </div>
           <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
           <script>
-            new window.VLibras.Widget();
+            new window.VLibras.Widget({
+                rootPah: '/app',
+                personalization: 'https://vlibras.gov.br/config/default_logo.json',
+                opacity: 0.5,
+                position: 'r',
+                avatar: 'random',
+            });
           </script>
+          
 
         <h2 id="MinhasFormacoes">Minhas Formações</h2>
         <div id="Formação">
-            <li>Formado: Etec mecatronica integrado ao ensino medio</li>
-            <li>Formado: Analista de suporte tectécnico(MicroPro) </li>
-            <li>Formado: Game Designer(MicroPro) </li>
-            <li>Cursando: Fatec Sistemas para internet</li>
+            <li class="text">Formado: Etec mecatronica integrado ao ensino medio</li>
+            <li class="text">Formado: Analista de suporte tectécnico(MicroPro) </li>
+            <li class="text">Formado: Game Designer(MicroPro) </li>
+            <li class="text">Cursando: Fatec Sistemas para internet</li>
         </div>
 
+ 
     </main>
 
 
@@ -86,11 +98,11 @@
         <img id="logofooter" src="img/Logo.jpg" alt="logofooter D">
 
         <a href="https://github.com/DiegoGabrielFerrari">
-            <img id="git" src="public/images/git-hub.png" alt="logo git hub ">
+            <img id="git" src="images/git-hub.png" alt="logo git hub ">
         </a>
 
         <a href="https://www.linkedin.com/in/diego-ferrari-417a77292/">
-            <img id="link" src="public/images/linked-in-circled.png" alt=" logo linkedin">
+            <img id="link" src="images/linked-in-circled.png" alt=" logo linkedin">
         </a>
 
         <form id="comentarioForm">
@@ -121,6 +133,7 @@
                 console.log('Comentário: ' + comentario);
             });
         </script>
+
 
 
     </footer>
